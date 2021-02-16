@@ -1,10 +1,21 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
 
-const routes: Routes = [];
+import { TemarioComponent } from './pages/temario/temario.component';
+import { HomeComponent } from './pages/home/home.component';
+
+
+const rutasDeLaAplicacion : Routes = [
+    { path: 'home', component: HomeComponent },
+    { path: 'temario', component: TemarioComponent },
+    { path: '**', redirectTo: 'home'}
+];
+
+
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion ) ],
+    exports: [ RouterModule  ]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule {}
