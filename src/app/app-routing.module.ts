@@ -18,7 +18,7 @@ const rutasDeLaAplicacion : Routes = [
 
 
 @NgModule({
-    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion ) ],
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion , { useHash: true}) ],
     exports: [ RouterModule  ]
 })
 
