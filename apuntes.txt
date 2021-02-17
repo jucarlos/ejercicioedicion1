@@ -1,0 +1,96 @@
+
+Repositorios:
+------------
+El ejercicio que estamos haciendo
+https://github.com/jucarlos/ejercicioedicion1
+
+Documentación y recursos que utilizaremos
+---------------------------------------
+https://github.com/jucarlos/apuntesCursoAngular
+
+
+
+Crear una aplicación nueva.
+---------------------------
+ng new ejercicio
+
+Ayuda
+------
+
+creamos 2 componentes - paginas :
+---------------------
+home: ng g c pages/home --skip-tests
+temario: ng g c pages/temario --skip-tests
+
+Revisando y adaptando el fichero de rutas
+------------------------------------------
+app-routing.module.ts
+
+
+creamos un componente compartido
+--------------------------------
+ng g c shared/navbar --skipTests ( --dry-run para hacer una simulación)
+
+En todos los casos todos los componentes se apuntan en app.module.
+
+
+En shared, poner un navbar de bootstrap y hacer las llamadas a los componetnes páginas.
+
+
+Tareita:
+1. Crear un componente llamado directivas dentro de la carpeta pages
+2. Hay que actualizar el fichero de rutas
+'directivas' compo... directivas
+3. Modificar el navbar y ver que se navega.
+
+
+
+Creando un servicio:
+ ng g s services/temario  --skip-tests
+
+
+Hacer peticiones HTTP,
+---------------------
+1. Incorporar en app.module el módulo HttpClientModule
+2. En el servicio que use http, inyectar el cliente.
+3. Utilizar los operadores reactivos. Observables.
+
+
+
+
+
+2 formas de descargar de github
+-------------------------------
+1. Forma colaborativa.
+haciendo un clone.
+git clone https://github.com/jucarlos/ejercicioedicion1.git descargaejercicio
+Todo el historial de cambios de la aplicación.
+git log -> para ver el historial de cambios de una aplicación.
+
+2. Descarga de zip, únicamente tenemos el código. ejercicioZIP
+
+En cualquier caso hay que hacer:
+npm install
+
+
+
+GIT
+---
+LOCAL
+1. Tengo un proyecto nuevo y le inicializo con git
+git init
+
+3 fases:
+git add .  -> Añadir los ficheros al stage.
+git commit -m "Primer commit"  -> Foto
+( recuperar datos ) git checkout -- .
+
+---
+REMOTO. 
+Donde está el repositorio:
+git remote add origin https://github.com/jucarlos/edicion1prueba1.git
+
+la rama principal de github es master -> git branch -M main
+
+quiero comprometer mi repositorio al github.
+git push -u origin master

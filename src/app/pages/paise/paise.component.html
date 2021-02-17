@@ -1,0 +1,23 @@
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td> Bandera </td>
+            <td> Nombre </td>
+            <td> Población </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paises; let i = index ">
+            <td> {{ i + 1 }} </td>
+            <td> 
+                <img class="mibandera" [src]="pais.flag">
+           </td>
+            <td> {{ pais.name  }} </td> 
+            <td> {{ pais.population }}</td>
+        </tr>
+    </tbody>
+
+</table>
