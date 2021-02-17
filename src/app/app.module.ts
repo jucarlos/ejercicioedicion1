@@ -13,6 +13,7 @@ import { TemarioComponent } from './pages/temario/temario.component';
 import { PaiseComponent } from './pages/paise/paise.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { PaiseComponent } from './pages/paise/paise.component';
     HomeComponent,
     TemarioComponent,
     DirectivasComponent,
-    PaiseComponent,
+    PaiseComponent
   ],
   imports: [
     BrowserModule,
