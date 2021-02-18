@@ -119,7 +119,6 @@ Tercer Día
     4. Crearmos el pipe 
     ng g p pipes/alreves
 
-
 4. Despliegues. GitHub. Paas. 
 
 
@@ -148,8 +147,8 @@ Viernes
     login. 
     registro,
     Formularios
-    
-     
+
+
 
 
     

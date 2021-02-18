@@ -20,9 +20,9 @@ export class ClientesComponent implements OnInit {
 
     this.clienteService.getClientes()
      .subscribe( (respuesta: any) => {
-        this.clientes = respuesta.clientes;
-        console.log(this.clientes)
-    });
+       this.clientes = respuesta.clientes;
+       console.log( this.clientes );
+      } );
     
   }
 
