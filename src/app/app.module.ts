@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TemarioComponent } from './pages/temario/temario.component';
 import { PaiseComponent } from './pages/paises/paise.component';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 
 
 
@@ -21,7 +22,8 @@ import { PaiseComponent } from './pages/paises/paise.component';
     HomeComponent,
     TemarioComponent,
     DirectivasComponent,
-    PaiseComponent
+    PaiseComponent,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,

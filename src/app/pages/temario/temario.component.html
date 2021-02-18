@@ -2,18 +2,25 @@
 
 <div class="row">
 
+    <div class="alert alert-info" >
+        Me gustan : {{ meGustan }}
+    </div>
+  
+
     <div class="alert alert-info" *ngIf="temas.length === 0">
         No hay datos
     </div>
   
     <div class="col-md-4" *ngFor="let tema of temas; let i = index" >
-        <div class="card border-primary mb-3">
-            <div class="card-header">Tema {{ i + 1 }}</div>
-            <div class="card-body text-primary">
-                <h5 class="text-title">{{ tema.titulo }}</h5>
-                <p class="card-text">{{ tema.contenido }}</p>
-            </div>
-        </div>
+        
+       <app-tarjeta 
+            [mostrarimagen]=false
+            [titulo]="'Tema'"
+            [numero]="i + 1"
+            [dato]="tema"
+            (eventoMeGusta)="eventoRecibido($event)"
+       ></app-tarjeta>
+
     </div>
 
     

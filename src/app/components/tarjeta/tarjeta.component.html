@@ -1,0 +1,17 @@
+
+
+<div class="card border-primary mb-3">
+    <img *ngIf="mostrarimagen" 
+        src="../../../assets/img/img.png" class="mibandera" >
+    <div class="card-header">{{ titulo }} - {{ numero }}</div>
+    <div class="card-body text-primary">
+        <h5 class="text-title"> {{ dato.titulo }} </h5>
+        <p class="card-text"> {{ dato.contenido }}. </p>
+    </div>
+    <button 
+        (click)="meGusta()"
+        class="btn btn-primary btn-sm"
+    >Me gusta</button>
+    
+</div>
+

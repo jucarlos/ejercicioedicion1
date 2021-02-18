@@ -2,7 +2,6 @@ import { Tema } from 'src/app/interfaces/tema';
 import { Component, OnInit } from '@angular/core';
 
 import { TemarioService } from './../../services/temario.service';
-import { TEMARIO } from 'src/app/data/datostemario';
 
 
 @Component({
@@ -18,11 +17,18 @@ export class TemarioComponent implements OnInit {
     
   temas: Tema[] = [];
 
+  meGustan = 0;
+
 
   constructor(private temaService: TemarioService ) {}
 
   ngOnInit(): void {
     this.temas = this.temaService.getTemario();
+  }
+
+  eventoRecibido( evento) {
+   // console.log( evento );
+    this.meGustan = this.meGustan + evento;
   }
 
 }

@@ -102,11 +102,19 @@ Tercer Día
 
 
 2. Reutilización de componentes. Crear y usar.
-    ng g c components/tarjeta
+    ng g c components/tarjeta --skip-test -is
+    Input y Output
+    Para el control de la data de la aplicación es muy util el uso de servicios.
+    otros ejemplos son redux, 
 
 3. Pipes. Usar algunos y vamos a crear un pipe.
+
+
 4. Despliegues. GitHub. Paas. 
+
 5. Instalar sweetalert, fontawesome
+
+
 6. Ver los primeros servicios del backend.
 
     https://backend-marco.herokuapp.com
