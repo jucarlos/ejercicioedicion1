@@ -6,6 +6,7 @@ export const environment = {
   production: false
 };
 export const URL_PAISES = 'https://restcountries.eu/rest/v2/all';
+export const URL_SERCIVIOS = 'https://backend-marco.herokuapp.com';
 
 /*
  * For easier debugging in development mode, you can import the following file

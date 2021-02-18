@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from "@angular/core";
 
 // Páginas
+import { ClientesComponent } from './pages/clientes/clientes.component';
 import { DirectivasComponent } from './pages/directivas/directivas.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PaiseComponent } from './pages/paises/paise.component';
@@ -17,13 +18,16 @@ const rutasDeLaAplicacion : Routes = [
     { path: 'directiva', component: DirectivasComponent } ,
     { path: 'paises', component: PaiseComponent } ,
     { path: 'pipes', component: PipesComponent } ,
+    { path: 'clientes', component: ClientesComponent } ,
+
+
     { path: '**', redirectTo: 'home'}
 ];
 
 
 
 @NgModule({
-    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion ) ],
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion , { useHash: true }) ],
     exports: [ RouterModule  ]
 })
 

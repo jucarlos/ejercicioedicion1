@@ -137,8 +137,21 @@ Tercer Día
         Hay que mandar token.
     
     /login (post)
-        parámetros. ????
+        parámetros. 
 
-    /registro (post)  
+    /usuarios (post)  
+
+
+Viernes
+------
+    Pantalla de clientes, ( edicion y borrado)
+    login. 
+    registro,
+    Formularios
+    
+     
+
+
+    
 
 

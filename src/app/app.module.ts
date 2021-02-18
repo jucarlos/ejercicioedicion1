@@ -24,6 +24,7 @@ import { AlrevesPipe } from './pipes/alreves.pipe';
 // Configuración idioma
 import localeEs  from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 registerLocaleData(localeEs);
 
@@ -38,7 +39,8 @@ registerLocaleData(localeEs);
     PaiseComponent,
     TarjetaComponent,
     PipesComponent,
-    AlrevesPipe
+    AlrevesPipe,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
