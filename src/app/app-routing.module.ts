@@ -1,10 +1,10 @@
-import { PaiseComponent } from './pages/paise/paise.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from "@angular/core";
 
-import { TemarioComponent } from './pages/temario/temario.component';
-import { HomeComponent } from './pages/home/home.component';
 import { DirectivasComponent } from './pages/directivas/directivas.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PaiseComponent } from './pages/paises/paise.component';
+import { TemarioComponent } from './pages/temario/temario.component';
 
 
 const rutasDeLaAplicacion : Routes = [
@@ -18,7 +18,7 @@ const rutasDeLaAplicacion : Routes = [
 
 
 @NgModule({
-    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion , { useHash: true}) ],
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion, { useHash: true } ) ],
     exports: [ RouterModule  ]
 })
 

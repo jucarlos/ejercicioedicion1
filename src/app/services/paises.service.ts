@@ -15,6 +15,7 @@ export class PaisesService {
     
     const url = URL_PAISES;
     return this.http.get( url )
+    // Observable
     
   }
 

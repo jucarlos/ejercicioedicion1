@@ -10,7 +10,7 @@ import { DirectivasComponent } from './pages/directivas/directivas.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TemarioComponent } from './pages/temario/temario.component';
-import { PaiseComponent } from './pages/paise/paise.component';
+import { PaiseComponent } from './pages/paises/paise.component';
 
 
 

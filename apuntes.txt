@@ -57,8 +57,6 @@ Hacer peticiones HTTP,
 
 
 
-
-
 2 formas de descargar de github
 -------------------------------
 1. Forma colaborativa.
@@ -94,4 +92,32 @@ la rama principal de github es master -> git branch -M main
 
 quiero comprometer mi repositorio al github.
 git push -u origin master
+
+
+Tercer Día
+----------
+1. Repaso 
+
+    ng g c pages/xxxxxxxx   
+
+
+2. Reutilización de componentes. Crear y usar.
+    ng g c components/tarjeta
+
+3. Pipes. Usar algunos y vamos a crear un pipe.
+4. Despliegues. GitHub. Paas. 
+5. Instalar sweetalert, fontawesome
+6. Ver los primeros servicios del backend.
+
+    https://backend-marco.herokuapp.com
+    /cliente (get)  -> Devolverá todos los clientes.
+        parámetros: limite: numero, desde: numero.
+    
+    /tipovehiculo (get) -> lista de tipos de vehículos
+        Hay que mandar token.
+    
+    /login (post)
+        parámetros. ????
+
+    /registro (post)  
 

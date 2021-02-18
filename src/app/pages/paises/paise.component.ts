@@ -15,11 +15,13 @@ export class PaiseComponent implements OnInit {
   constructor(private paisesService: PaisesService ) { }
 
   ngOnInit(): void {
-    this.paisesService.getPaises().subscribe ( (respuesta: any) => {
-      this.paises = respuesta;
-      console.log(this.paises);
+   
+    this.paisesService.getPaises()
+    .subscribe( (respuesta: any) => {
+        this.paises = respuesta;
+    }, err => {
+      console.log('No se pueden encontrar paises', err);
     });
-
 
     
   }
