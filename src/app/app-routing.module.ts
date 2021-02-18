@@ -17,14 +17,13 @@ const rutasDeLaAplicacion : Routes = [
     { path: 'directiva', component: DirectivasComponent } ,
     { path: 'paises', component: PaiseComponent } ,
     { path: 'pipes', component: PipesComponent } ,
-
     { path: '**', redirectTo: 'home'}
 ];
 
 
 
 @NgModule({
-    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion, { useHash: true } ) ],
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion ) ],
     exports: [ RouterModule  ]
 })
 
