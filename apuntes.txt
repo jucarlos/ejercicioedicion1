@@ -93,6 +93,10 @@ la rama principal de github es master -> git branch -M main
 quiero comprometer mi repositorio al github.
 git push -u origin master
 
+Actualizar nuestro repositorio local con lo que hay en el remoto:
+git pull origin master
+
+
 
 Tercer Día
 ----------
@@ -108,9 +112,17 @@ Tercer Día
     otros ejemplos son redux, 
 
 3. Pipes. Usar algunos y vamos a crear un pipe.
+    1. crear el componente página
+    ng g c pages/pipes --skip-test -is
+    2. actulizar en el fichero de rutas
+    3. haremos el html y lo que se en la clase del componente.
+    4. Crearmos el pipe 
+    ng g p pipes/alreves
 
 
 4. Despliegues. GitHub. Paas. 
+
+
 
 5. Instalar sweetalert, fontawesome
 
@@ -128,4 +140,5 @@ Tercer Día
         parámetros. ????
 
     /registro (post)  
+
 

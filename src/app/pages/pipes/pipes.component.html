@@ -1,0 +1,79 @@
+
+
+<table class="table table-bordered">
+
+    <thead>
+        <th>Pipe</th>
+        <th>Origen</th>
+        <th>Expresion</th>
+        <th>Resultado</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UpperCase</td>
+            <td>{{ nombre }}</td>
+            <td> nombre | uppercase</td>
+            <td>{{ nombre | uppercase }}</td>
+        </tr>
+        <tr>
+            <td>lowerCarse</td>
+            <td>{{ nombre }}</td>
+            <td> nombre | lowercase</td>
+            <td>{{ nombre | lowercase }}</td>
+        </tr>
+
+        <tr>
+            <td>Slice</td>
+            <td>{{ cadenaDeTexto }}</td>
+            <td> cadenaDeTexto | slice</td>
+            <td>{{ cadenaDeTexto | slice:1:5 }}</td>
+        </tr>
+
+        <tr>
+            <td>TitleCase</td>
+            <td>{{ titulos }}</td>
+            <td> titulos | titlecase</td>
+            <td>{{ titulos | titlecase }}</td>
+        </tr>
+
+        <tr>
+            <td>Currency</td>
+            <td>{{ precio }}</td>
+            <td> precio | currency</td>
+            <td>{{ precio | currency:"EUR" }}</td>
+        </tr>
+
+        
+        <tr>
+            <td>DatePipe</td>
+            <td>{{ fecha }}</td>
+            <td> fecha | datepipe </td>
+            <td>{{ fecha | date:'short' }}</td>
+        </tr>
+
+
+        <tr>
+            <td>DatePipe</td>
+            <td>{{ fecha }}</td>
+            <td> fecha | datepipe </td>
+            <td>{{ fecha | date:'MMMM dd, yyyy' }}</td>
+        </tr>
+
+
+        
+        <tr>
+            <td>Texto Alrevés</td>
+            <td>{{ cadenaDeTexto }}</td>
+            <td> cadenaDeTexto | alreves </td>
+            <td>{{ cadenaDeTexto | alreves }}</td>
+        </tr>
+
+
+
+
+
+    </tbody>
+
+</table>
+
+
