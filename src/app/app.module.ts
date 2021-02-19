@@ -2,8 +2,9 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// Modulo Http
+// Modulo de angular
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 // Componentes
 import { AppComponent } from './app.component';
 import { DirectivasComponent } from './pages/directivas/directivas.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
+import { ClienteDetalleComponent } from './pages/clientes/cliente-detalle.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TemarioComponent } from './pages/temario/temario.component';
@@ -24,7 +27,9 @@ import { AlrevesPipe } from './pipes/alreves.pipe';
 // Configuración idioma
 import localeEs  from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
-import { ClientesComponent } from './pages/clientes/clientes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 registerLocaleData(localeEs);
 
@@ -40,12 +45,15 @@ registerLocaleData(localeEs);
     TarjetaComponent,
     PipesComponent,
     AlrevesPipe,
-    ClientesComponent
+    ClientesComponent,
+    ClienteDetalleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

@@ -8,6 +8,10 @@ Documentación y recursos que utilizaremos
 ---------------------------------------
 https://github.com/jucarlos/apuntesCursoAngular
 
+Ejercicio final:
+---------------
+https://cursoangularjccm.firebaseapp.com/#/home
+
 
 
 Crear una aplicación nueva.
@@ -130,7 +134,7 @@ Tercer Día
 
     https://backend-marco.herokuapp.com
     /cliente (get)  -> Devolverá todos los clientes.
-        parámetros: limite: numero, desde: numero.
+        parámetros opcionales: limite: numero, desde: numero.
     
     /tipovehiculo (get) -> lista de tipos de vehículos
         Hay que mandar token.
@@ -142,11 +146,37 @@ Tercer Día
 
 
 Viernes
-------
+-------
+    Repaso
+
+    Loading con spinner.
+
+    Libreria fontawesome en \\10.128.222.79\Apuntes\Angular\cursoJccm
+        Copiamos la carpeta fontawesome en la carpeta assets de nuestro proyecto.
+
+
+
     Pantalla de clientes, ( edicion y borrado)
+
+
+    Angular Material. ( lo intentaremos )
     login. 
     registro,
-    Formularios
+    Formularios ( Por html y por el ts)
+
+
+
+Lunes
+-----
+    - Módulos.
+    - Carga Perezosa.
+    - Interceptores
+    - Marco de trabajo de la junta.
+
+
+
+
+
 
 
 

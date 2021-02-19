@@ -1,3 +1,4 @@
+import { ClienteDetalleComponent } from './pages/clientes/cliente-detalle.component';
 
 // Propio de Angular
 import { Routes, RouterModule } from '@angular/router';
@@ -19,6 +20,7 @@ const rutasDeLaAplicacion : Routes = [
     { path: 'paises', component: PaiseComponent } ,
     { path: 'pipes', component: PipesComponent } ,
     { path: 'clientes', component: ClientesComponent } ,
+    { path: 'clientes/:id', component: ClienteDetalleComponent },
 
 
     { path: '**', redirectTo: 'home'}
@@ -27,7 +29,7 @@ const rutasDeLaAplicacion : Routes = [
 
 
 @NgModule({
-    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion , { useHash: true }) ],
+    imports: [ RouterModule.forRoot ( rutasDeLaAplicacion , { useHash: true } ) ],
     exports: [ RouterModule  ]
 })
 
