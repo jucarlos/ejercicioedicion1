@@ -160,21 +160,22 @@ Viernes
 
 
     Angular Material. ( lo intentaremos )
+
+
     login. 
     registro,
     Formularios ( Por html y por el ts)
 
+VENIMOS A LAS 11:20
 
 
 Lunes
 -----
+    - TErminar el login, proteger una rutas ( guard )
     - Módulos.
     - Carga Perezosa.
     - Interceptores
     - Marco de trabajo de la junta.
-
-
-
 
 
 

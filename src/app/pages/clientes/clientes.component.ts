@@ -4,6 +4,8 @@ import { ClientesService } from './../../services/clientes.service';
 
 import { Cliente } from './../../models/cliente';
 
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 import Swal from 'sweetalert2';
 
 
@@ -20,7 +22,8 @@ export class ClientesComponent implements OnInit {
   desde = 0;
   totalRegistros = 0;
 
-  constructor(private clienteService: ClientesService) { }
+  constructor(private clienteService: ClientesService,
+    private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
 
@@ -69,11 +72,15 @@ export class ClientesComponent implements OnInit {
 
           
           if ( resp.ok ) {
-            Swal.fire(
-              'Borrado!',
-              'Ha sido borrado.',
-              'success'
-            );
+            // Swal.fire(
+            //   'Borrado!',
+            //   'Ha sido borrado.',
+            //   'success'
+            // );
+            this._snackBar.open('Cliento borrado', 'Hecho', {
+              duration: 2000,
+            });
+            
             this.cargarClientes();
 
           }

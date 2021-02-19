@@ -29,7 +29,9 @@ import localeEs  from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+// Angular Material
+import { MaterialModule } from './modules/material/material.module';
+import { ModalComponent } from './components/modal/modal.component';
 
 registerLocaleData(localeEs);
 
@@ -46,14 +48,16 @@ registerLocaleData(localeEs);
     PipesComponent,
     AlrevesPipe,
     ClientesComponent,
-    ClienteDetalleComponent
+    ClienteDetalleComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
     {
