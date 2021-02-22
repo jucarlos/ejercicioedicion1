@@ -52,20 +52,46 @@
               <li><a class="dropdown-item" href="#"></a></li>
               <li><a class="dropdown-item"  routerLink='/clientes'>Clientes</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Tipo de Vehículos</a></li>
+              <li><a class="dropdown-item" routerLink='/tipovehiculos'>Tipo de Vehículos</a></li>
             </ul>
           </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Formularios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item"  routerLink='/ftemplate'>Template</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink='/freactivo'>Reactivos</a></li>
+            </ul>
+          </li>
+
+
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
 
+        <app-datos-usuario></app-datos-usuario>
+
+
           <button 
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          class="btn btn-outline-success" 
-          type="submit">Entrar</button>
-          
+          *ngIf="!usuarioService.autenticado"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="btn btn-outline-success" 
+            type="submit">Entrar</button>
+
+            <button 
+            *ngIf="usuarioService.autenticado"
+            class="btn btn-outline-success" 
+            (click)="usuarioService.logout()"
+            type="submit">Salir</button>
+
+
 
       </div>
     </div>

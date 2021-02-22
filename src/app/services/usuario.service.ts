@@ -45,6 +45,7 @@ export class UsuarioService {
 
     return this.http.post( url, usuario, { headers: this.httpHeaders })
     .pipe(
+
       map( (data: any) => {
         this.usuario = new Usuario (data.usuario.nombre, data.usuario.email, data.usuario.password );
 //         console.log( this.usuario );

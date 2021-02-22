@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 // Modulo de angular
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,8 @@ import { TemarioComponent } from './pages/temario/temario.component';
 import { PaiseComponent } from './pages/paises/paise.component';
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { TemplatesComponent } from './pages/formularios/templates/templates.component';
+import { ReactivosComponent } from './pages/formularios/reactivos/reactivos.component';
 
 // Pipes
 import { AlrevesPipe } from './pipes/alreves.pipe';
@@ -32,6 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Angular Material
 import { MaterialModule } from './modules/material/material.module';
 import { ModalComponent } from './components/modal/modal.component';
+import { DatosUsuarioComponent } from './components/datos-usuario/datos-usuario.component';
+import { TipoVehiculosComponent } from './pages/tipo-vehiculos/tipo-vehiculos.component';
 
 registerLocaleData(localeEs);
 
@@ -49,13 +53,18 @@ registerLocaleData(localeEs);
     AlrevesPipe,
     ClientesComponent,
     ClienteDetalleComponent,
-    ModalComponent
+    ModalComponent,
+    DatosUsuarioComponent,
+    TipoVehiculosComponent,
+    TemplatesComponent,
+    ReactivosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule
   ],

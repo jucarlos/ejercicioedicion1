@@ -159,21 +159,28 @@ Viernes
     Pantalla de clientes, ( edicion y borrado)
 
 
-    Angular Material. ( lo intentaremos )
+    Angular Material. 
 
 
     login. 
-    registro,
     Formularios ( Por html y por el ts)
-
-VENIMOS A LAS 11:20
 
 
 Lunes
 -----
-    - TErminar el login, proteger una rutas ( guard )
-    - Módulos.
-    - Carga Perezosa.
+
+Ejercicio completo en https://github.com/jucarlos/micursoangular
+
+    - Terminar el login 
+    - Proteger una ruta ( guard )
+    - Formularios. 
+    ( recreo )
+
+    - Hacer el cuestionario.
+
+{{ 6 + 7 | currency}}
+
+    - Módulos y Carga Perezosa.
     - Interceptores
     - Marco de trabajo de la junta.
 

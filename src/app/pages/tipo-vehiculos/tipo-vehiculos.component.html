@@ -1,0 +1,13 @@
+
+Mostramos los tipos de vehículos
+
+
+<div *ngIf="tipoVehiculos.length > 0">
+    <ul>
+        <li *ngFor="let tv of tipoVehiculos">
+            {{ tv.nombre }}
+        </li>
+    </ul>
+</div>
+
+
